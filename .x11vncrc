@@ -1,0 +1,5 @@
+display :0
+usepw
+forever
+listen 10.0.0.1
+xkb
