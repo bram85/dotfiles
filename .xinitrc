@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Set Caps Lock as Mod4 key
+xmodmap ~/.Xmodmap
+
+# Enable Energy Star features
+xset +dpms
+
+# Set mouse speed
+xset m 4/3
+
+# Autorepeat
+xset r rate 300 30
+
+exec awesome
