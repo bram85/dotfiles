@@ -4,7 +4,7 @@
 xmodmap ~/.Xmodmap
 
 # Enable Energy Star features
-xset +dpms
+[ "$HOSTNAME" = 'mercurius' ] && xset +dpms
 
 # Set mouse speed
 xset m 4/3
