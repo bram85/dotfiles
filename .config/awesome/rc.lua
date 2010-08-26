@@ -306,7 +306,7 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
-    { rule = { class = "Kopete" },
+    { rule = { name = "Kopete" },
       properties = { floating = true, maximized_vertical = true, tag = tags[1][2] } },
 }
 -- }}}
