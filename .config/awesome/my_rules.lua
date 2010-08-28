@@ -7,9 +7,9 @@ awful.rules.rules = {
     focus = true, keys = clientkeys,
     buttons = clientbuttons
   } },
-    
-  -- MPlayer
-  { rule = { class = "MPlayer" }, properties = { floating = true } },
+
+  -- Chromium
+  { rule = { class = "Chromium" }, properties = { tag = tags[ 1 ][ 1 ] } },
 
   -- Kopete
   { rule = { name = "Kopete" }, properties = {
@@ -17,5 +17,8 @@ awful.rules.rules = {
     maximized_vertical = true,
     tag = tags[ 1 ][ 2 ]
   } },
+
+  -- MPlayer
+  { rule = { class = "MPlayer" }, properties = { floating = true } },
 }
 -- }}}
