@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# An example hook script that is called after a successful
+# commit is made.
+#
+# To enable this hook, rename this file to "post-commit".
+
+# Set irssi password
+pushd .irssi > /dev/null
+
+if [ ! -f 'passwd' ]; then
+  echo 'No passwd file found.' >&2
+  exit 1
+fi
+
+sed -e "s/%pass%/$(cat passwd)/" config.skel > config
+
+popd
+
