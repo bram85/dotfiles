@@ -8,6 +8,7 @@ require( "beautiful" )
 require( "naughty" )
 
 have_vicious, vicious = pcall( require, "vicious" )
+have_obvious, obvious = pcall( require, "obvious" )
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers

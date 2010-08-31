@@ -25,7 +25,7 @@ globalkeys = awful.util.table.join(
       client.focus:raise()
     end
   end ),
-  
+
   awful.key( { modkey, }, "w", function ()
     mymainmenu:show( { keygrabber = true } )
   end ),
@@ -102,14 +102,14 @@ for i = 1, keynumber do
           awful.tag.viewonly( tags[ screen][ i ] )
       end
     end ),
-    
+
     awful.key( { modkey, "Control" }, "#" .. i + 9, function ()
       local screen = mouse.screen
       if tags[ screen ][ i ] then
           awful.tag.viewtoggle( tags[ screen ][ i ] )
       end
     end ),
-    
+
     awful.key( { modkey, "Shift" }, "#" .. i + 9, function ()
       if client.focus and tags[ client.focus.screen ][ i ] then
         awful.client.movetotag( tags[ client.focus.screen][ i ] )
@@ -120,6 +120,19 @@ for i = 1, keynumber do
       if client.focus and tags[ client.focus.screen ][ i ] then
         awful.client.toggletag( tags[ client.focus.screen ][ i ] )
       end
+    end ),
+
+    -- Volume control
+    have_obvious and awful.key( { }, "XF86AudioRaiseVolume", function()
+      obvious.volume_alsa.raise( 0, "Master" )
+    end ),
+
+    have_obvious and awful.key( { }, "XF86AudioLowerVolume", function()
+      obvious.volume_alsa.lower( 0, "Master" )
+    end ),
+
+    have_obvious and awful.key( { }, "XF86AudioMute", function()
+      obvious.volume_alsa.mute( 0, "Master" )
     end )
   )
 end
@@ -129,6 +142,7 @@ clientbuttons = awful.util.table.join(
   awful.button( { modkey }, 1, awful.mouse.client.move ),
   awful.button( { modkey }, 3, awful.mouse.client.resize )
 )
+
 
 -- Set keys
 root.keys( globalkeys )
