@@ -7,14 +7,16 @@ mylauncher = awful.widget.launcher( { image = image(beautiful.awesome_icon), men
 mytextclock = awful.widget.textclock( { align = "right" } )
 
 -- Monitoring
-cpuwidget = awful.widget.graph()
+if have_vicious then
+  cpuwidget = awful.widget.graph()
 
-cpuwidget:set_width( 25 )
-cpuwidget:set_background_color( "#494B4F" )
-cpuwidget:set_color( "#FF5656" )
-cpuwidget:set_gradient_angle( 0 )
-cpuwidget:set_gradient_colors( { "#FF5656", "#88A175", "#AECF96" } )
-vicious.register( cpuwidget, vicious.widgets.cpu, "$1" )
+  cpuwidget:set_width( 25 )
+  cpuwidget:set_background_color( "#494B4F" )
+  cpuwidget:set_color( "#FF5656" )
+  cpuwidget:set_gradient_angle( 0 )
+  cpuwidget:set_gradient_colors( { "#FF5656", "#88A175", "#AECF96" } )
+  vicious.register( cpuwidget, vicious.widgets.cpu, "$1" )
+end
 
 -- Create a systray
 mysystray = widget( { type = "systray" } )
@@ -101,7 +103,7 @@ for s = 1, screen.count() do
       layout = awful.widget.layout.horizontal.leftright
     },
     mylayoutbox[ s ],
-    mytextclock, s == 1 and mysystray or nil, cpuwidget.widget,
+    mytextclock, s == 1 and mysystray or nil, cpuwidget.widget or nil,
     mytasklist[ s ],
     layout = awful.widget.layout.horizontal.rightleft
   }

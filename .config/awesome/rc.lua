@@ -7,7 +7,7 @@ require( "beautiful" )
 -- Notification library
 require( "naughty" )
 
-require( "vicious" )
+have_vicious, vicious = pcall( require, "vicious" )
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
