@@ -57,8 +57,13 @@ globalkeys = awful.util.table.join(
   awful.key( { modkey,           }, "space", function () awful.layout.inc(layouts,  1) end ),
   awful.key( { modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end ),
 
-    -- Prompt
+  -- Prompt
   awful.key( { modkey }, "r", function () mypromptbox[ mouse.screen ]:run() end),
+
+  -- Client list
+  awful.key( { modkey }, ";", function()
+    awful.menu.clients( { width = 250 }, { keygrabber = true } )
+  end ),
 
   awful.key( { modkey }, "x", function ()
     awful.prompt.run (
@@ -143,6 +148,13 @@ clientbuttons = awful.util.table.join(
   awful.button( { modkey }, 3, awful.mouse.client.resize )
 )
 
+awful.menu.menu_keys = {
+  up = { "k", "Up" },
+  down = { "j", "Down" },
+  exec = { "l", "Return", "Right" },
+  back = { "h", "Left" },
+  close = { "q", "Escape" },
+}
 
 -- Set keys
 root.keys( globalkeys )
