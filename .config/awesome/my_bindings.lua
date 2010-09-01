@@ -67,6 +67,19 @@ globalkeys = awful.util.table.join(
       awful.util.eval, nil,
       awful.util.getdir( "cache" ) .. "/history_eval"
     )
+  end ),
+
+  -- Volume control
+  have_obvious and awful.key( { }, "XF86AudioRaiseVolume", function()
+    obvious.volume_alsa.raise( 0, "Master" )
+  end ),
+
+  have_obvious and awful.key( { }, "XF86AudioLowerVolume", function()
+    obvious.volume_alsa.lower( 0, "Master" )
+  end ),
+
+  have_obvious and awful.key( { }, "XF86AudioMute", function()
+    obvious.volume_alsa.mute( 0, "Master" )
   end )
 )
 
@@ -120,19 +133,6 @@ for i = 1, keynumber do
       if client.focus and tags[ client.focus.screen ][ i ] then
         awful.client.toggletag( tags[ client.focus.screen ][ i ] )
       end
-    end ),
-
-    -- Volume control
-    have_obvious and awful.key( { }, "XF86AudioRaiseVolume", function()
-      obvious.volume_alsa.raise( 0, "Master" )
-    end ),
-
-    have_obvious and awful.key( { }, "XF86AudioLowerVolume", function()
-      obvious.volume_alsa.lower( 0, "Master" )
-    end ),
-
-    have_obvious and awful.key( { }, "XF86AudioMute", function()
-      obvious.volume_alsa.mute( 0, "Master" )
     end )
   )
 end
