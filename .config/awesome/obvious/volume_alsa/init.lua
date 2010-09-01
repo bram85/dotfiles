@@ -71,13 +71,13 @@ end
 
 function raise(cardid, channel, v)
     v = v or 1
-    awful.util.spawn("amixer -q -c " .. cardid .. " sset " .. channel .. " " .. v .. "+", false)
+    awful.util.spawn("amixer -q -c " .. cardid .. " sset " .. channel .. " " .. v .. "+ unmute", false)
     update_by_values(cardid, channel)
 end
 
 function lower(cardid, channel, v)
     v = v or 1
-    awful.util.spawn("amixer -q -c " .. cardid .. " sset " .. channel .. " " .. v .. "-", false)
+    awful.util.spawn("amixer -q -c " .. cardid .. " sset " .. channel .. " " .. v .. "- unmute", false)
     update_by_values(cardid, channel)
 end
 
