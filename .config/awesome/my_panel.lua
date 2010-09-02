@@ -1,5 +1,40 @@
 -- see my_menu
-mylauncher = awful.widget.launcher( { image = image(beautiful.awesome_icon), menu = mymainmenu } )
+mylauncher = awful.widget.launcher( {
+  image = image(beautiful.awesome_icon),
+  menu = mymainmenu
+} )
+
+-- lock button
+lockbutton = awful.widget.launcher( {
+  image = image( '/usr/share/icons/oxygen/16x16/actions/system-lock-screen.png' ),
+  command = 'xlock'
+} );
+
+-- launch buttons
+
+appbuttons = {
+  awful.widget.launcher( {
+    image = image( '/usr/share/icons/hicolor/16x16/apps/chromium.png' ),
+    command = 'chromium'
+  } ),
+
+  awful.widget.launcher( {
+    image = image( '/usr/share/icons/hicolor/16x16/apps/kopete.png' ),
+    command = 'kopete'
+  } ),
+
+  awful.widget.launcher( {
+    image = image( '/usr/share/icons/hicolor/16x16/apps/amarok.png' ),
+    command = 'amarok'
+  } ),
+
+  awful.widget.launcher( {
+    image = image( '/usr/share/pixmaps/spotify.png' ),
+    command = 'spotify'
+  } ),
+
+  layout = awful.widget.layout.horizontal.leftright
+}
 
 -- {{{ Wibox
 
@@ -89,12 +124,16 @@ for s = 1, screen.count() do
   -- Add widgets to the wibox - order matters
   mywibox[s].widgets = {
     { mylauncher,
+      appbuttons,
       mytaglist[ s ],
       mypromptbox[ s ],
       layout = awful.widget.layout.horizontal.leftright
     },
     mylayoutbox[ s ],
-    mytextclock, s == 1 and mysystray or nil, cpuwidget.widget or nil,
+    mytextclock,
+    s == 1 and mysystray or nil,
+    cpuwidget.widget or nil,
+    lockbutton,
     mytasklist[ s ],
     layout = awful.widget.layout.horizontal.rightleft
   }
