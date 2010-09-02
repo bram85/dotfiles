@@ -8,9 +8,6 @@ awful.rules.rules = {
     buttons = clientbuttons
   } },
 
-  -- Chromium
-  { rule = { class = "Chromium" }, properties = { tag = tags[ 1 ][ 1 ] } },
-
   -- Kopete
   { rule = { name = "Kopete" }, properties = {
     floating = true,
