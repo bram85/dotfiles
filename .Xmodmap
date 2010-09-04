@@ -1,2 +1,4 @@
 clear lock
 add mod4 = Caps_Lock
+
+keycode 108 = Multi_key
