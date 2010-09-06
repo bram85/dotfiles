@@ -81,6 +81,10 @@ mytasklist.buttons = awful.util.table.join(
     c:raise()
   end ),
 
+  awful.button( { }, 2, function( c )
+    c:kill()
+  end ),
+
   awful.button( { }, 4, function()
     awful.client.focus.byidx(1)
     if client.focus then
