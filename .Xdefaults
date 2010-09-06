@@ -3,3 +3,11 @@ Xcursor.theme: Oxygen_White
 
 ! XLock
 XLock.mode: blank
+
+XLock.info:
+XLock.showdate: off
+XLock.description: off
+
+XLock.mousemotion: on
+XLock.echokeys: on
+XLock.echokey: *
