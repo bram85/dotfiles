@@ -12,3 +12,30 @@ XLock.mousemotion: on
 XLock.echokeys: on
 XLock.echokey: *
 XLock.usefirst: off
+
+! Xterm
+xterm*foreground: #dcdccc
+xterm*background: #2c2c2c
+xterm*color0: #707070
+xterm*color1: #705050
+xterm*color2: #60b48a
+xterm*color3: #dfaf8f
+xterm*color4: #9ab8d7
+xterm*color5: #dc8cc3
+xterm*color6: #8cd0d3
+xterm*color7: #dcdccc
+xterm*color8: #709080
+xterm*color9: #dca3a3
+xterm*color10: #72d5a3
+xterm*color11: #f0dfaf
+xterm*color12: #94bff3
+xterm*color13: #ec93d3
+xterm*color14: #93e0e3
+xterm*color15: #ffffff
+
+xterm*faceName: dejavu sans mono
+xterm*faceSize: 8
+
+xterm*cursorBlink: on
+xterm*cursorOffTime: 500
+xterm*cursorOnTime: 500
