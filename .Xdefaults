@@ -11,3 +11,4 @@ XLock.description: off
 XLock.mousemotion: on
 XLock.echokeys: on
 XLock.echokey: *
+XLock.usefirst: off
