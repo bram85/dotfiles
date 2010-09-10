@@ -26,6 +26,9 @@ editor_cmd = terminal .. " -e " .. editor
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
+-- determine hostname
+hostname = awful.util.pread("hostname"):gsub("\n", "")
+
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
