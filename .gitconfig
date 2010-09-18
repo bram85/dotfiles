@@ -3,3 +3,7 @@
 	email = me@bramschoenmakers.nl
 [color]
 	ui = true
+[mergetool "vimdiff3"]
+	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[merge]
+	tool = vimdiff3
