@@ -73,12 +73,16 @@ mytaglist.buttons = awful.util.table.join(
 mytasklist = {}
 mytasklist.buttons = awful.util.table.join(
   awful.button( { }, 1, function( c )
-    if not c:isvisible() then
-      awful.tag.viewonly(c:tags()[1])
-    end
+    if not c.minimized then
+      c.minimized = true
+    else
+      if not c:isvisible() then
+        awful.tag.viewonly(c:tags()[1])
+      end
 
-    client.focus = c
-    c:raise()
+      client.focus = c
+      c:raise()
+    end
   end ),
 
   awful.button( { }, 2, function( c )
