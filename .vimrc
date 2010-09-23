@@ -6,6 +6,9 @@ filetype indent on
 " Disable mouse
 set mouse=
 
+" Explicitly set backspace, gVim in Windows has different defaults
+set backspace=indent,eol,start
+
 " Show line numbers
 set number
 
