@@ -15,6 +15,12 @@ awful.rules.rules = {
     tag = tags[ 1 ][ 2 ]
   } },
 
+  -- Amarok
+  { rule = { class = "Amarok", role = "MainWindow" }, properties = { tag = tags[ 1 ][ 6 ] } },
+
+  -- Spotify
+  { rule = { class = "Spotify" }, properties = { tag = tags[ 1 ][ 6 ] } },
+
   -- MPlayer
   { rule = { class = "MPlayer" }, properties = { floating = true } },
 }
