@@ -26,6 +26,9 @@ export EDITOR=vim
 [ "$HOSTNAME" = 's040391' ] || export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 
+# Python documentation
+export PYTHONDOCS=/usr/share/doc/python/html/
+
 is19()
 {
         local COUNT=`echo $1 | sed -e 's/ij/i/g' | wc -c`
