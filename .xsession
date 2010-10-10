@@ -1,5 +1,8 @@
 #!/bin/bash
 
+[ -r /etc/profile ] && source /etc/profile
+[ -r ~/.bash_profile ] && source ~/.bash_profile
+
 # Set Caps Lock as Mod4 key
 xmodmap ~/.Xmodmap
 
