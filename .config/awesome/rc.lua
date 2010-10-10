@@ -15,7 +15,7 @@ have_obvious, obvious = pcall( require, "obvious" )
 beautiful.init( awful.util.getdir( "config" ) .. "/themes/default/theme.lua" );
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "xterm -ls"
 editor = os.getenv( "EDITOR" ) or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
