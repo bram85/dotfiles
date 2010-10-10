@@ -4,7 +4,6 @@ umask 0077
 
 # colors for ls, etc.
 alias ls="ls --color=auto"
-alias yaourt="yaourt --lightbg"
 
 # tmux
 alias tmux="tmux -2"
