@@ -33,6 +33,11 @@ appbuttons = {
     command = 'spotify'
   } ),
 
+  awful.widget.launcher( {
+    image = image( '/usr/share/icons/oxygen/16x16/apps/system-file-manager.png' ),
+    command = 'dolphin /home/bram'
+  } ),
+
   layout = awful.widget.layout.horizontal.leftright
 }
 
