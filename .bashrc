@@ -18,6 +18,9 @@ fi
 
 export EDITOR=vim
 
+# Default to Dutch
+export LANG=nl_NL.UTF-8
+
 # Prompt
 [ "$HOSTNAME" = 's040391' ] || export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
