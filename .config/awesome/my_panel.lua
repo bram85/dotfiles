@@ -7,7 +7,7 @@ mylauncher = awful.widget.launcher( {
 -- lock button
 lockbutton = awful.widget.launcher( {
   image = image( '/usr/share/icons/oxygen/16x16/actions/system-lock-screen.png' ),
-  command = 'xlock'
+  command = 'xtrlock'
 } );
 
 -- launch buttons

@@ -1,18 +1,6 @@
 ! Cursor
 Xcursor.theme: Oxygen_White
 
-! XLock
-XLock.mode: blank
-
-XLock.info:
-XLock.showdate: off
-XLock.description: off
-
-XLock.mousemotion: on
-XLock.echokeys: on
-XLock.echokey: *
-XLock.usefirst: off
-
 ! Xterm
 xterm*foreground: #dcdccc
 xterm*background: #2c2c2c

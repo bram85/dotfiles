@@ -1,7 +1,7 @@
 -- {{{ Menu
 -- Create a laucher widget and a main menu
 myawesomemenu = {
-  { "lock", "xlock" },
+  { "lock", "xtrlock" },
   { "restart", awesome.restart },
   { "quit", awesome.quit }
 }
