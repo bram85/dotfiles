@@ -40,3 +40,8 @@ is19()
 		echo "Nee ($(($COUNT-1)))"
 	fi
 }
+
+fullPath()
+{
+  find "$(pwd)" -maxdepth 1 -name "$1"
+}
