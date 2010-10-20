@@ -44,7 +44,7 @@ appbuttons = {
 -- {{{ Wibox
 
 -- Create a textclock widget
-mytextclock = awful.widget.textclock( { align = "right" } )
+mytextclock = awful.widget.textclock( { align = "right" }, "%a %d %b, %H:%M" )
 
 -- Monitoring
 if have_vicious then
