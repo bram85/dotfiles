@@ -60,7 +60,7 @@ let php_sql_query=1
 let php_htmlInStrings=1
 
 " Use ack for grep
-set grepprg=ack\ -a\ --nopager\ --nocolor\ --smart-case\ --column
+set grepprg=ack-grep\ -a\ --nopager\ --nocolor\ --smart-case\ --column
 set grepformat=%f:%l:%c:%m
 
 " For git-vim: a sane width for GitBlame
