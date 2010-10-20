@@ -45,6 +45,21 @@ appbuttons = {
 
 -- Create a textclock widget
 mytextclock = awful.widget.textclock( { align = "right" }, "%a %d %b, %H:%M" )
+mytextclock:buttons( awful.util.table.join(
+  awful.button( { }, 1, function()
+    -- TODO: Locate whether there's already a calendar and kill it instead
+
+    -- assuming a single screen setup
+    local w_area = screen[ 1 ].workarea
+
+    local width = 280
+    local height = 280
+    local x = w_area.width - width
+    local y = w_area.height - height
+
+    awful.util.spawn( string.format( "kdialog --geometry %dx%d+%d+%d --caption kdialogcalendar --calendar Calendar", width, height, x, y ), false )
+  end )
+) )
 
 -- Monitoring
 if have_vicious then

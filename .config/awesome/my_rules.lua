@@ -30,5 +30,15 @@ awful.rules.rules = {
 
   -- MPlayer
   { rule = { class = "MPlayer" }, properties = { floating = true } },
+
+  -- Calendar popup when clicking the clock
+  { rule = { name = "kdialogcalendar" },
+    properties = {
+      floating = true,
+      skip_taskbar = true
+    }
+    -- setting geometry with a rule doesn't seem to work, the dialog gets relocated after setting the geometry with c:geometry()
+    -- instead, the geometry is explicitly stated at kdialog's invocation in my_panel.lua
+  },
 }
 -- }}}
