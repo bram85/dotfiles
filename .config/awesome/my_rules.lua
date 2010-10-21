@@ -35,7 +35,9 @@ awful.rules.rules = {
   { rule = { name = "kdialogcalendar" },
     properties = {
       floating = true,
-      skip_taskbar = true
+      skip_taskbar = true,
+      ontop = true,
+      sticky = true
     }
     -- setting geometry with a rule doesn't seem to work, the dialog gets relocated after setting the geometry with c:geometry()
     -- instead, the geometry is explicitly stated at kdialog's invocation in my_panel.lua
