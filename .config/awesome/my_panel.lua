@@ -47,7 +47,19 @@ appbuttons = {
 mytextclock = awful.widget.textclock( { align = "right" }, "%a %d %b, %H:%M" )
 mytextclock:buttons( awful.util.table.join(
   awful.button( { }, 1, function()
-    -- TODO: Locate whether there's already a calendar and kill it instead
+    local cs = client.get()
+    local current_instance = nil
+    for k, v in pairs( cs ) do
+      if v.name == 'kdialogcalendar' then
+        current_instance = v
+      end
+    end
+
+    -- if there's already an instance, kill it
+    if current_instance ~= nil then
+      current_instance:kill()
+      return
+    end
 
     -- assuming a single screen setup
     local w_area = screen[ 1 ].workarea
