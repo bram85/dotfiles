@@ -30,7 +30,7 @@ appbuttons = {
 
   awful.widget.launcher( {
     image = image( '/usr/share/pixmaps/spotify-linux-48x48.png' ),
-    command = 'wine "/home/bram/.wine/drive_c/Program Files/Spotify/spotify.exe"'
+    command = 'spotify'
   } ),
 
   awful.widget.launcher( {
