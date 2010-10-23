@@ -31,6 +31,10 @@ export PYTHONDOCS=/usr/share/doc/python/html/
 # KDE Home
 export KDEHOME=/home/bram/.kde4
 
+# Debian stuff
+export DEBEMAIL=debian@bramschoenmakers.nl
+export DEBFULLNAME="Bram Schoenmakers"
+
 is19()
 {
         local COUNT=`echo $1 | sed -e 's/ij/i/g' | wc -c`
