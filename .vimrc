@@ -80,3 +80,7 @@ let g:checksyntax_cmd_tex = 'chktex -n12 -n35 -q -v0'
 
 map <F8> :TlistToggle<cr>
 map <F9> :NERDTreeToggle<cr>
+
+" Configure tag list
+let g:Tlist_Exit_OnlyWindow = 1
+let g:Tlist_Show_One_File = 1
