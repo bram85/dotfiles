@@ -62,12 +62,12 @@ mytextclock:buttons( awful.util.table.join(
     end
 
     -- assuming a single screen setup
-    local w_area = screen[ 1 ].workarea
+    local w_area = screen[ 1 ].geometry
 
     local width = 280
     local height = 280
     local x = w_area.width - width
-    local y = w_area.height - height
+    local y = w_area.height - height - 20
 
     awful.util.spawn( string.format( "kdialog --geometry %dx%d+%d+%d --caption kdialogcalendar --calendar Calendar", width, height, x, y ), false )
   end )
