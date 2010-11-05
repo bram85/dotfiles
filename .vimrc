@@ -77,3 +77,6 @@ noremap <F10> :CheckSyntax<cr>
 inoremap <F10> :CheckSyntax<cr>
 " Ignore some warnings with checking LaTeX files.
 let g:checksyntax_cmd_tex = 'chktex -n12 -n35 -q -v0'
+
+map <F8> :TlistToggle<cr>
+map <F9> :NERDTreeToggle<cr>
