@@ -216,3 +216,9 @@ hi  link csXmlTag             Keyword
 
 
 " Special for PHP
+
+" Special for diff
+hi DiffAdd term=reverse cterm=bold ctermbg=green ctermfg=white
+hi DiffChange term=reverse cterm=bold ctermbg=cyan ctermfg=black
+hi DiffText term=reverse cterm=bold ctermbg=gray ctermfg=black
+hi DiffDelete term=reverse cterm=bold ctermbg=red ctermfg=black
