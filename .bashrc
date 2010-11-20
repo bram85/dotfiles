@@ -49,3 +49,15 @@ fullPath()
 {
   find "$(pwd)" -maxdepth 1 -name "$1"
 }
+
+asdf()
+{
+  setxkbmap dvorak
+  xmodmap ~/.Xmodmap
+}
+
+aoeu()
+{
+  setxkbmap us
+  xmodmap ~/.Xmodmap
+}
