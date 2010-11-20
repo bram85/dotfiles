@@ -3,6 +3,9 @@
 [ -r /etc/profile ] && source /etc/profile
 [ -r ~/.bash_profile ] && source ~/.bash_profile
 
+# Dvorak keyboard layout
+setxkbmap dvorak
+
 # Set Caps Lock as Mod4 key
 xmodmap ~/.Xmodmap
 
