@@ -75,14 +75,18 @@ mytextclock:buttons( awful.util.table.join(
 
 -- Monitoring
 if have_vicious then
+  -- CPU
   cpuwidget = awful.widget.graph()
-
   cpuwidget:set_width( 25 )
   cpuwidget:set_background_color( "#494B4F" )
   cpuwidget:set_color( "#FF5656" )
   cpuwidget:set_gradient_angle( 0 )
   cpuwidget:set_gradient_colors( { "#FF5656", "#88A175", "#AECF96" } )
   vicious.register( cpuwidget, vicious.widgets.cpu, "$1" )
+
+  -- Load
+  uptimewidget = widget({ type = "textbox" })
+  vicious.register(uptimewidget, vicious.widgets.uptime, "$4 $5 $6" )
 end
 
 -- Create a systray
@@ -172,6 +176,7 @@ for s = 1, screen.count() do
     mylayoutbox[ s ],
     mytextclock,
     s == 1 and mysystray or nil,
+    uptimewidget or nil,
     cpuwidget.widget or nil,
     lockbutton,
     mytasklist[ s ],
