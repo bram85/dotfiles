@@ -86,15 +86,15 @@ hi WildMenu         guifg=green       guibg=yellow      gui=NONE      ctermfg=bl
 hi PmenuSbar        guifg=black       guibg=white       gui=NONE      ctermfg=black       ctermbg=white       cterm=NONE
 "hi Ignore           guifg=gray        guibg=black       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
-hi Error            guifg=NONE        guibg=NONE        gui=undercurl ctermfg=black       ctermbg=red         cterm=NONE     guisp=#FF6C60 " undercurl color
-hi ErrorMsg         guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=black       ctermbg=red         cterm=NONE
-hi WarningMsg       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=black       ctermbg=red         cterm=NONE
+hi Error            guifg=NONE        guibg=NONE        gui=undercurl ctermfg=white       ctermbg=red         cterm=NONE     guisp=#FF6C60 " undercurl color
+hi ErrorMsg         guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=white       ctermbg=red         cterm=NONE
+hi WarningMsg       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=white       ctermbg=red         cterm=NONE
 
 " Spell
-hi SpellBad         guifg=NONE        guibg=NONE        gui=undercurl ctermfg=black       ctermbg=red         cterm=BOLD
-hi SpellCap         guifg=NONE        guibg=NONE        gui=undercurl ctermfg=black       ctermbg=red         cterm=BOLD
+hi SpellBad         guifg=NONE        guibg=NONE        gui=undercurl ctermfg=white       ctermbg=red         cterm=BOLD
+hi SpellCap         guifg=NONE        guibg=NONE        gui=undercurl ctermfg=white       ctermbg=red         cterm=BOLD
 hi SpellRare        guifg=NONE        guibg=NONE        gui=undercurl ctermfg=black       ctermbg=yellow      cterm=BOLD
-hi SpellLocal       guifg=NONE        guibg=NONE        gui=undercurl ctermfg=black       ctermbg=red         cterm=BOLD
+hi SpellLocal       guifg=NONE        guibg=NONE        gui=undercurl ctermfg=white       ctermbg=red         cterm=BOLD
 
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg          guifg=black       guibg=#C6C5FE     gui=BOLD      ctermfg=black       ctermbg=cyan        cterm=BOLD
@@ -117,7 +117,7 @@ hi Keyword          guifg=#96CBFE     guibg=NONE        gui=NONE      ctermfg=bl
 hi PreProc          guifg=#96CBFE     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE
 hi Conditional      guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE  " if else end
 
-hi Todo             guifg=#8f8f8f     guibg=NONE        gui=NONE      ctermfg=black       ctermbg=red         cterm=NONE
+hi Todo             guifg=#8f8f8f     guibg=NONE        gui=NONE      ctermfg=white       ctermbg=red         cterm=NONE
 hi Constant         guifg=#99CC99     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 
 hi Identifier       guifg=#C6C5FE     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
