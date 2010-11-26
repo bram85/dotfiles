@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+function precmd
+{
+  vcs_info 'prompt'
+}
+
+# VCS information
+autoload -Uz vcs_info
+
+zstyle ':vcs_info:*:prompt:*' enable git hg bzr svn
+zstyle ':vcs_info:git:prompt:*' check-for-changes true
+zstyle ':vcs_info:*:prompt:*' stagedstr '+'
+zstyle ':vcs_info:*:prompt:*' unstagedstr '*'
+zstyle ':vcs_info:*:prompt:*' actionformats "(%b%u%c|%a) "
+zstyle ':vcs_info:*:prompt:*' formats "(%b%u%c) "
+
+local vcs='$vcs_info_msg_0_'
+PROMPT="%B%(?..%{${bg[red]}${fg[white]}%}[%?]$reset_color )%{$fg_bold[green]%}%n@%m %{$fg[blue]%}%~ %{$fg[yellow]%}${vcs}%{$fg[blue]%}%(!.#.$)$reset_color$b "
+

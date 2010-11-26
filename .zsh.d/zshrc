@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+bindkey -v
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/bram/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+autoload -Uz colors
+colors
+
+# Include all files
+for c in ~/.zsh.d/[0-9][0-9]*[^~]; do
+  source "$c"
+done
+

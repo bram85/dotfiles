@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+
+alias tmux="tmux -2"
+alias rnw="tmux rename-window"

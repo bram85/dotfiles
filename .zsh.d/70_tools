@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+# FIXME
+#is19()
+#{
+#  local COUNT=`echo $1 | sed -e 's/ij/i/g' | wc -c`
+#  if [ "$COUNT" == '20' ]; then
+#    echo "Ja"
+#  else
+#    echo "Nee ($(($COUNT-1)))"
+#  fi
+#}

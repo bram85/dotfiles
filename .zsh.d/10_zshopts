@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+setopt appendhistory
+
+setopt auto_cd
+
+setopt autolist
+
+setopt extendedglob
+
+unsetopt menucomplete
+
+setopt prompt_subst
+
