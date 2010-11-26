@@ -71,8 +71,8 @@ if !exists('loaded_taglist')
     " The taglist plugin requires the built-in Vim system() function. If this
     " function is not available, then don't load the plugin.
     if !exists('*system')
-        echomsg 'Taglist: Vim system() built-in function is not available. ' .
-                    \ 'Plugin is not loaded.'
+        " echomsg 'Taglist: Vim system() built-in function is not available. ' .
+        "            \ 'Plugin is not loaded.'
         let loaded_taglist = 'no'
         let &cpo = s:cpo_save
         finish
