@@ -16,4 +16,4 @@ zstyle ':vcs_info:*:prompt:*' actionformats "(%b%u%c|%a) "
 zstyle ':vcs_info:*:prompt:*' formats "(%b%u%c) "
 
 local vcs='$vcs_info_msg_0_'
-PROMPT="%B%(?..%{${bg[red]}${fg[white]}%}[%?]%{$reset_color%} )%{$fg_bold[green]%}%n@%m %{$fg[blue]%}%~ %{$fg[yellow]%}${vcs}%{$fg[blue]%}%(!.#.$)%{$reset_color%}%b "
+PROMPT="%B%(?..%{${bg[red]}${fg[white]}%}[%?]%{$reset_color%} )%(!.%{$fg_bold[red]%}%}.%{$fg_bold[green]%})%n@%m %{$fg[blue]%}%~ %{$fg[yellow]%}${vcs}%{$fg[blue]%}%(!.#.$)%{$reset_color%}%b "
