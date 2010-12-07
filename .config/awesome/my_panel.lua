@@ -14,8 +14,8 @@ lockbutton = awful.widget.launcher( {
 
 appbuttons = {
   awful.widget.launcher( {
-    image = image( '/usr/share/icons/hicolor/16x16/apps/chromium-browser.png' ),
-    command = 'chromium-browser'
+    image = image( '/opt/google/chrome/product_logo_24.png' ),
+    command = 'google-chrome'
   } ),
 
   awful.widget.launcher( {
