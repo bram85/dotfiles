@@ -38,6 +38,11 @@ appbuttons = {
     command = 'dolphin /home/bram'
   } ),
 
+  awful.widget.launcher( {
+    image = image( '/home/bram/dotfiles/.config/awesome/pixmaps/evernote.png' ),
+    command = '/usr/share/nevernote/nevernote.sh'
+  } ),
+
   layout = awful.widget.layout.horizontal.leftright
 }
 

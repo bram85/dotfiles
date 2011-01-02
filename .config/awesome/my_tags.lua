@@ -10,9 +10,9 @@ for s = 1, screen.count() do
     "4 work1",
     "5 work2",
     "6 music",
-    7,
+    "7 notes",
     8,
-    9
+    9,
   }, s, layouts[ 2 ] )
 end
 -- }}}
