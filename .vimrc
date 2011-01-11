@@ -68,6 +68,8 @@ let g:git_blame_width = 50
 
 " Required for vim-latex
 let g:tex_flavor='latex'
+" Default to PDF
+let g:Tex_DefaultTargetFormat='pdf'
 
 " Deal with customized Javascript ctags output
 " http://stackoverflow.com/questions/1790623/how-can-i-make-vims-taglist-plugin-show-useful-information-for-javascript
