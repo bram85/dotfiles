@@ -63,9 +63,6 @@ let php_htmlInStrings=1
 set grepprg=ack-grep\ -a\ --nopager\ --nocolor\ --smart-case\ --column
 set grepformat=%f:%l:%c:%m
 
-" For git-vim: a sane width for GitBlame
-let g:git_blame_width = 50
-
 " Required for vim-latex
 let g:tex_flavor='latex'
 " Default to PDF
