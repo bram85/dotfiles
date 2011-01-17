@@ -1,5 +1,5 @@
 interface: wlan0
-port-display: yes
+port-display: on
 port-resolution: yes
 log-scale: yes
 use-bytes: yes
