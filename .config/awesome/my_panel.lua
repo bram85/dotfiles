@@ -49,7 +49,7 @@ appbuttons = {
 -- {{{ Wibox
 
 -- Create a textclock widget
-mytextclock = awful.widget.textclock( { align = "right" }, "%a %d %b, %H:%M" )
+mytextclock = awful.widget.textclock( { align = "right" }, "%a %d %b, %H:%M", 1 )
 mytextclock:buttons( awful.util.table.join(
   awful.button( { }, 1, function()
     local cs = client.get()
