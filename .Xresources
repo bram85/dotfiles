@@ -15,7 +15,7 @@ xterm*color2: #60b48a
 xterm*color10: #72d5a3
 ! Yellow
 xterm*color3: #ffed96
-xterm*color11: #ff0ff5
+xterm*color11: #f0ff50
 ! Blue
 xterm*color4: #9ab8d7
 xterm*color12: #94bff3
