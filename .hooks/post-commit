@@ -10,5 +10,18 @@ fi
 
 sed -e "s/%pass%/$(cat passwd)/" config.skel > config
 
-popd
+popd > /dev/null
+
+# Set RDP settings
+
+pushd .zsh.d > /dev/null
+
+if [ ! -f 'data.sed' ]; then
+  echo 'No data file found.' >&2
+  exit 1
+fi
+
+sed -f data.sed 30_aliases.skel > 30_aliases
+
+popd > /dev/null
 

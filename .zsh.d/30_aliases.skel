@@ -5,3 +5,4 @@ alias grep="grep --color=auto"
 
 alias tmux="tmux -2"
 alias rnw="tmux rename-window"
+alias kantoor="rdesktop -n `date +%Y%m%d` -u %user% -xb -g 1600x1000 %host%:%port%"
