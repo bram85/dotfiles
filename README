@@ -1,0 +1,9 @@
+This repository contains my configuration files. By no means an attempt is made to make this as general as possible, the configuration solely fits my own needs. Feel free to look around and copy whatever you like.
+
+Besides small configuration files for several Linux applications, there are full configurations for:
+
+  * awesome (.config/awesome)
+  * tmux (.tmux.conf)
+  * Vim (.vim)
+  * Zsh (.zsh.d)
+
