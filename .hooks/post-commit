@@ -21,7 +21,7 @@ if [ ! -f 'data.sed' ]; then
   exit 1
 fi
 
-sed -f data.sed 30_aliases.skel > 30_aliases
+sed -f data.sed _30_aliases.skel > 30_aliases
 
 popd > /dev/null
 
