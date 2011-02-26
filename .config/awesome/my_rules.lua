@@ -31,9 +31,6 @@ awful.rules.rules = {
   -- MPlayer
   { rule = { class = "MPlayer" }, properties = { floating = true } },
 
-  -- Nevernote
-  { rule = { name = "NeverNote" }, properties = { tag = tags[ 1 ][ 7 ] } },
-
   -- Calendar popup when clicking the clock
   { rule = { name = "kdialogcalendar" },
     properties = {
