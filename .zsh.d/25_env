@@ -1,4 +1,5 @@
 #!/bin/zsh
 
 export DISPLAY=:0
+export EDITOR=vim
 
