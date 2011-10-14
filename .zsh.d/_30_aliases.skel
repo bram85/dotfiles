@@ -3,7 +3,10 @@
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 
-alias tmux="tmux -2"
 alias rnw="tmux rename-window"
 alias kantoor="rdesktop -n `date +%Y%m%d` -u %user% -xb -g 1600x1000 %host%:%port%"
 alias minecraft="/usr/lib/jvm/java-6-sun/bin/java -Xmx1024M -Xms512M -cp /home/bram/bin/minecraft.jar net.minecraft.LauncherFrame"
+
+tmux() {
+  /usr/bin/tmux -2 a || /usr/bin/tmux -2
+}
