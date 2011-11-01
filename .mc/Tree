@@ -1,0 +1,131 @@
+Midnight Commander TreeStore v 2.0
+1:/
+0:/bin
+0:/boot
+0:5 /grub
+0:6 lost+found
+0:/dev
+0:/etc
+0:4 /Muttrc.d
+0:5 X11
+0:5 acpi
+0:9 /events
+0:6 lternatives
+0:6 pache2
+0:7 t
+0:5 bash_completion.d
+0:5 ca-certificates
+0:7 lendar
+0:6 onsole-setup
+0:6 ron.d
+0:11 aily
+0:10 hourly
+0:10 monthly
+0:10 weekly
+0:5 dbconfig-common
+0:7 us-1
+0:6 efault
+0:8 oma
+0:6 hcp
+0:6 iscover.conf.d
+0:6 nsmasq.d
+0:6 pkg
+0:5 emacs
+0:6 xim4
+0:5 fonts
+0:5 gdb
+0:6 roff
+0:7 ub.d
+0:5 init.d
+0:9 ramfs-tools
+0:7 sserv
+0:12 .conf.d
+0:6 proute2
+0:5 javascript-common
+0:5 kbd
+0:6 ernel
+0:5 ld.so.conf.d
+0:7 ap
+0:6 ogcheck
+0:8 rotate.d
+0:6 sb-base
+0:5 mc
+0:6 odprobe.d
+0:6 unin
+0:6 ysql
+0:5 nagios-plugins
+0:11 3
+0:6 etwork
+0:5 opt
+0:5 pam.d
+0:7 ngo
+0:6 erl
+0:6 hp5
+0:8 myadmin
+0:6 pp
+0:6 rofile.d
+0:6 ython
+0:11 2.6
+0:5 radiusclient-ng
+0:6 c0.d
+0:7 1.d
+0:7 2.d
+0:7 3.d
+0:7 4.d
+0:7 5.d
+0:7 6.d
+0:7 S.d
+0:6 esolvconf
+0:6 syslog.d
+0:5 security
+0:7 nsors.d
+0:6 gml
+0:6 kel
+0:6 nmp
+0:6 sh
+0:7 l
+0:6 udoers.d
+0:6 ysctl.d
+0:5 terminfo
+0:7 xmf
+0:5 udev
+0:6 fw
+0:5 vim
+0:6 mware-tools
+0:5 w3m
+0:5 xml
+0:5 zsh
+0:/home
+0:5 /bram
+0:10 /.aptitude
+0:12 links2
+0:12 mc
+0:12 ssh
+0:12 w3m
+0:12 zkbd
+0:11 Projecten
+0:11 dotfiles
+0:19 /.git
+0:21 hooks
+0:21 icons
+0:22 rssi
+0:21 ssh
+0:21 texmf
+0:21 vim
+0:21 zsh.d
+0:11 tmp
+0:6 lost+found
+0:/lib
+0:/lost+found
+0:/media
+0:/mnt
+0:/opt
+0:/proc
+0:/root
+0:/sbin
+0:/selinux
+0:/srv
+0:/sys
+0:/tmp
+0:/usr
+0:/var
