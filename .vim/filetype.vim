@@ -6,6 +6,6 @@ augroup filetypedetect
   au! BufRead,BufNewFile *.mcrl2        setfiletype mcrl2
   au! BufRead,BufNewFile *.go           setfiletype go
   au! BufRead,BufNewFile *.smv          setfiletype smv
-  au! BufRead,BufNewFile *.md           setfiletype markdown
+  au! BufRead,BufNewFile *.md           setfiletype markdown | set linebreak
 augroup END
 
