@@ -11,15 +11,3 @@ fi
 
 popd > /dev/null
 
-# Set RDP settings
-
-pushd .zsh.d > /dev/null
-
-if [ ! -f 'data.sed' ]; then
-  echo 'No data file found.' >&2
-else
-  sed -f data.sed _30_aliases.skel > 30_aliases
-fi
-
-popd > /dev/null
-
