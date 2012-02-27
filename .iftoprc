@@ -1,4 +1,4 @@
-interface: wlan0
+interface: eth0
 port-display: on
 port-resolution: yes
 log-scale: yes
