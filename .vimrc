@@ -72,11 +72,6 @@ let g:Tex_DefaultTargetFormat='pdf'
 " http://stackoverflow.com/questions/1790623/how-can-i-make-vims-taglist-plugin-show-useful-information-for-javascript
 let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
 
-noremap <F10> :CheckSyntax<cr>
-inoremap <F10> :CheckSyntax<cr>
-" Ignore some warnings with checking LaTeX files.
-let g:checksyntax_cmd_tex = 'chktex -n12 -n35 -q -v0'
-
 map <F8> :TlistToggle<cr>
 map <F9> :NERDTreeToggle<cr>
 
