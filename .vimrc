@@ -81,3 +81,8 @@ let g:Tlist_Show_One_File = 1
 
 " Set font in gVim
 set guifont=Lucida_Console:h10:cANSI
+
+" Set statusline
+set laststatus=2
+set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)\ C:%c%V
+
