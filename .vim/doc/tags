@@ -54,7 +54,6 @@
 'syntastic_mode_map'	syntastic.txt	/*'syntastic_mode_map'*
 'syntastic_quiet_warnings'	syntastic.txt	/*'syntastic_quiet_warnings'*
 'syntastic_stl_format'	syntastic.txt	/*'syntastic_stl_format'*
-:CheckSyntax	checksyntax.txt	/*:CheckSyntax*
 :Errors	syntastic.txt	/*:Errors*
 :MatchDebug	matchit.txt	/*:MatchDebug*
 :MkVimball	pi_vimball.txt	/*:MkVimball*
@@ -500,7 +499,6 @@ buffer-explorer	bufexplorer.txt	/*buffer-explorer*
 center	latexhelp.txt	/*center*
 changing-commands	latex-suite.txt	/*changing-commands*
 changing-environments	latex-suite.txt	/*changing-environments*
-checksyntax.txt	checksyntax.txt	/*checksyntax.txt*
 cite-search-caching	latex-suite.txt	/*cite-search-caching*
 compiler-dependency	latex-suite.txt	/*compiler-dependency*
 compiler-output-customization	latex-suite.txt	/*compiler-output-customization*
