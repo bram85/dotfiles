@@ -86,3 +86,7 @@ set guifont=Lucida_Console:h10:cANSI
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%{fugitive#statusline()}%{SyntasticStatuslineFlag()}%=L:%l/%L\ (%p%%)\ C:%c%V
 
+" Syntastic: use the jsl.conf in the current diroctory if available
+if filereadable( ".jsl.conf" )
+  let g:syntastic_javascript_jsl_conf = "-conf .jsl.conf"
+endif
