@@ -1,3 +1,6 @@
+" Enable pathogen plugin
+call pathogen#infect()
+
 syntax enable
 filetype on
 filetype plugin on
