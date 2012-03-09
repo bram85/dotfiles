@@ -84,5 +84,5 @@ set guifont=Lucida_Console:h10:cANSI
 
 " Set statusline
 set laststatus=2
-set statusline=%<%f\ %h%w%m%r%y%{fugitive#statusline()}%=L:%l/%L\ (%p%%)\ C:%c%V
+set statusline=%<%f\ %h%w%m%r%y%{fugitive#statusline()}%{SyntasticStatuslineFlag()}%=L:%l/%L\ (%p%%)\ C:%c%V
 
