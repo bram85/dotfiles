@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/repeat"]
 	path = .vim/bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/bundle/commentary"]
+	path = .vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
