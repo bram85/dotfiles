@@ -77,3 +77,10 @@ set guifont=Lucida_Console:h10:cANSI
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%{fugitive#statusline()}%{SyntasticStatuslineFlag()}%=L:%l/%L\ (%p%%)\ C:%c%V
 
+" More convenient shortcut for omnicompletion.
+inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+\ "\<lt>C-n>" :
+\ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+\ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+\ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+imap <C-@> <C-Space>
