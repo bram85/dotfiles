@@ -54,14 +54,6 @@ let g:debuggerDedicatedTab = 0
 " Show quickfix window with full with
 botright cwindow
 
-" Enable python omni completion
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-
-" Handy for PHP development
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-let php_sql_query=1
-let php_htmlInStrings=1
-
 " Use ack for grep
 set grepprg=ack-grep\ -a\ --nopager\ --nocolor\ --smart-case\ --column
 set grepformat=%f:%l:%c:%m
@@ -70,10 +62,6 @@ set grepformat=%f:%l:%c:%m
 let g:tex_flavor='latex'
 " Default to PDF
 let g:Tex_DefaultTargetFormat='pdf'
-
-" Deal with customized Javascript ctags output
-" http://stackoverflow.com/questions/1790623/how-can-i-make-vims-taglist-plugin-show-useful-information-for-javascript
-let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
 
 map <F8> :TlistToggle<cr>
 map <F9> :NERDTreeToggle<cr>
@@ -89,7 +77,3 @@ set guifont=Lucida_Console:h10:cANSI
 set laststatus=2
 set statusline=%<%f\ %h%w%m%r%y%{fugitive#statusline()}%{SyntasticStatuslineFlag()}%=L:%l/%L\ (%p%%)\ C:%c%V
 
-" Syntastic: use the jsl.conf in the current diroctory if available
-if filereadable( ".jsl.conf" )
-  let g:syntastic_javascript_jsl_conf = "-conf .jsl.conf"
-endif
