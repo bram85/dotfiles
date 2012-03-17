@@ -1,0 +1,1 @@
+hardstatus alwayslastline "%{= KW}%-Lw%{= BK}%50>%n%f* %t%{= Kw}%+Lw%<"
