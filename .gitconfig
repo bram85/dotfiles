@@ -6,8 +6,10 @@
 [mergetool "vimdiff3"]
 	cmd = vim -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [merge]
-	tool = vimdiff3
+	tool = fugitive
 [diff]
 	tool = vimdiff
 [difftool]
 	prompt = false
+[mergetool "fugitive"]
+        cmd = vim -f -c \"Gdiff\" \"$MERGED\"
