@@ -86,3 +86,6 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 imap <C-@> <C-Space>
 
 let g:SuperTabCompletionContexts= 's:Context'
+
+" Remove temporary fugitive buffers after they're closed
+autocmd BufReadPost fugitive://* set bufhidden=delete
