@@ -7,5 +7,6 @@ augroup filetypedetect
   au! BufRead,BufNewFile *.go           setfiletype go
   au! BufRead,BufNewFile *.smv          setfiletype smv
   au! BufRead,BufNewFile *.dart         setfiletype dart
+  au! BufRead,BufNewFile *.json         setfiletype javascript
 augroup END
 
