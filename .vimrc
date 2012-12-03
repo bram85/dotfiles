@@ -51,7 +51,7 @@ set foldcolumn=0
 " Disable tabbar in debug mode
 let g:debuggerDedicatedTab = 0
 
-" Show quickfix window with full with
+" Show quickfix window with full width
 botright cwindow
 
 " Use ack for grep
