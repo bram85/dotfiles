@@ -34,3 +34,9 @@
 [submodule ".vim/bundle/unimpaired"]
 	path = .vim/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule ".vim/bundle/taboo"]
+	path = .vim/bundle/taboo
+	url = https://github.com/gcmt/taboo.vim.git
