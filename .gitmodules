@@ -37,3 +37,6 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule ".vim/bundle/taboo"]
+	path = .vim/bundle/taboo
+	url = https://github.com/gcmt/taboo.vim.git
