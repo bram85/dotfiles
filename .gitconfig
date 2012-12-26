@@ -13,3 +13,6 @@
 	prompt = false
 [mergetool "fugitive"]
         cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[alias]
+        diffs = diff --stat
+        lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
