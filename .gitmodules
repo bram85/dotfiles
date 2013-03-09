@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/zencoding"]
 	path = .vim/bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule ".vim/bundle/numbertoggle"]
+	path = .vim/bundle/numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
