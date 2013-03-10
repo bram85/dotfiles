@@ -89,3 +89,5 @@ let g:SuperTabCompletionContexts= 's:Context'
 
 " Remove temporary fugitive buffers after they're closed
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
+nnoremap <F7> :GundoToggle<CR>
