@@ -16,7 +16,7 @@ set backspace=indent,eol,start
 set number
 
 " Set color scheme
-colorscheme ir_black
+colorscheme solarized
 set background=dark
 
 " Searching
@@ -91,3 +91,10 @@ let g:SuperTabCompletionContexts= 's:Context'
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
 nnoremap <F7> :GundoToggle<CR>
+
+" Some adjustments to the highlighting.
+hi DiffAdd term=reverse ctermbg=green ctermfg=white
+hi DiffChange term=reverse ctermbg=cyan ctermfg=black
+hi DiffText term=reverse ctermbg=gray ctermfg=black
+hi DiffDelete term=reverse ctermbg=red ctermfg=black
+
