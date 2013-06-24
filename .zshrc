@@ -37,3 +37,6 @@ plugins=(git extract vi)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+export PATH=/home/bram/usr/bin:$PATH
+export EDITOR=vim
