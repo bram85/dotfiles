@@ -58,3 +58,21 @@ keystate = ""
 
 RAlt & j::AltTab
 RAlt & k::ShiftAltTab
+
+; Edit only selected text in vim
+^!v:: ; press  Control+Alt+V
+ViEditSelect:
+   ;MsgBox vimC:\Program Files (x86)\Vim\vim73
+   Send ^{ins down}
+   FileDelete, c:\Temp\vtmp
+   FileAppend, %Clipboard%, C:\Temp\vtmp 
+   runwait, "C:\Program Files (x86)\Vim\vim73\gvim.exe" c:\Temp\vtmp, c:\
+   FileRead, contents, c:\Temp\vtmp
+   StringRight, ending, contents, 2
+   if ending = `r`n
+      StringTrimRight, contents, contents, 2 ; remove last crlf from clipboard
+   Clipboard := contents 
+   Send +{ins down}
+   contents = 
+   ;FileDelete, c:\Temp\vtmp
+return
