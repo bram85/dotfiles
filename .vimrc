@@ -98,3 +98,4 @@ hi DiffChange term=reverse ctermbg=cyan ctermfg=black
 hi DiffText term=reverse ctermbg=gray ctermfg=black
 hi DiffDelete term=reverse ctermbg=red ctermfg=black
 
+let g:indentLine_char = '│'
