@@ -40,3 +40,5 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=/home/bram/usr/bin:$PATH
 export EDITOR=vim
+
+eval `dircolors ~/.dir_colors`
