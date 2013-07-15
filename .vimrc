@@ -1,3 +1,9 @@
+let g:pathogen_disabled = []
+
+if has('python') == 0
+  call add( g:pathogen_disabled, 'ultisnips' )
+endif
+
 " Enable pathogen plugin
 call pathogen#infect()
 
