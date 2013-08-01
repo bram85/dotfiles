@@ -2,3 +2,4 @@ hardstatus alwayslastline "%{= KW}%-Lw%{= BK}%50>%n%f* %t%{= Kw}%+Lw%<"
 defscrollback 10000
 startup_message off
 bindkey ^O windowlist -b -m
+bindkey V  split -v
