@@ -105,3 +105,7 @@ hi DiffText term=reverse ctermbg=gray ctermfg=black
 hi DiffDelete term=reverse ctermbg=red ctermfg=black
 
 let g:indentLine_char = '│'
+
+" Persistent undo
+set undodir=$HOME/.vim/undo,.
+set undofile
