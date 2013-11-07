@@ -109,3 +109,6 @@ let g:indentLine_char = '│'
 " Persistent undo
 set undodir=$HOME/.vim/undo,.
 set undofile
+
+" Clearcase
+let g:ccaseNoComment = 1

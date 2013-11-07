@@ -67,3 +67,9 @@
 [submodule ".vim/bundle/xolox-vim-misc"]
 	path = .vim/bundle/xolox-vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule ".vim/bundle/todotxt"]
+	path = .vim/bundle/todotxt
+	url = https://github.com/freitass/todo.txt-vim.git
+[submodule ".vim/bundle/ccase"]
+	path = .vim/bundle/ccase
+	url = https://github.com/vim-scripts/ccase.vim.git
