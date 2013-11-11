@@ -96,7 +96,9 @@ let g:SuperTabCompletionContexts= 's:Context'
 " Remove temporary fugitive buffers after they're closed
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
+" Gundo
 nnoremap <F7> :GundoToggle<CR>
+let g:gundo_preview_bottom = 1
 
 " Some adjustments to the highlighting.
 hi DiffAdd term=reverse ctermbg=green ctermfg=white
