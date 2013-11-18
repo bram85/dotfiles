@@ -75,6 +75,7 @@ map <F9> :NERDTreeToggle<cr>
 " Configure tag list
 let g:Tlist_Exit_OnlyWindow = 1
 let g:Tlist_Show_One_File = 1
+let g:Tlist_WinWidth = 40
 
 " Set font in gVim
 set guifont=Lucida_Console:h10:cANSI
