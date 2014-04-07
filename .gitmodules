@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/ccase"]
 	path = .vim/bundle/ccase
 	url = https://github.com/vim-scripts/ccase.vim.git
+[submodule ".vim/bundle/ikiwiki-syntax"]
+	path = .vim/bundle/ikiwiki-syntax
+	url = http://git.devnull.li/ikiwiki-syntax.git

@@ -9,6 +9,5 @@ augroup filetypedetect
   au! BufRead,BufNewFile *.dart                 setfiletype dart
   au! BufRead,BufNewFile *.json                 setfiletype javascript
   au! BufRead,BufNewFile *.wiki                 setfiletype mediawiki
-  au! BufRead,BufNewFile *.mdwn                 setfiletype markdown
 augroup END
 
