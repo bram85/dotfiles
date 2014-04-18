@@ -12,6 +12,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set encoding=utf-8
+
 " Disable mouse
 set mouse=
 
