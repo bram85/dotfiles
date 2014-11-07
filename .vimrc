@@ -123,4 +123,4 @@ let g:syntastic_always_populate_loc_list = 1
 
 " CtrlP
 let g:ctrlp_map = '<Leader>t'
-nmap ; :CtrlPBuffer<CR>
+nmap - :CtrlPBuffer<CR>
