@@ -111,6 +111,9 @@ hi DiffDelete term=reverse ctermbg=red ctermfg=black
 
 let g:indentLine_char = '│'
 
+" Swapfile location, first /tmp then ~/tmp (differs from default order)
+set directory=.,/tmp,~/tmp,/var/tmp
+
 " Persistent undo
 set undodir=$HOME/.vim/undo,.
 set undofile
